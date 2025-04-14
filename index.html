@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce de Paty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente general de la página */
+            background-color: #f4f4f4; /* Color de fondo */
+            text-align: center; /* Centrado de texto */
+        }
+
+        h1 {
+            font-size: 3em; /* Tamaño grande para el título */
+            color: #fff; /* Color del texto */
+            background-color: #52b929; /* Color de fondo del título */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            margin: 20px auto; /* Margen superior e inferior */
+            width: fit-content; /* Ajuste al contenido */
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="inicio">
+
+        <header>
+            <h2>Pastelería Dulce de Paty</h2>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#producto">Productos</a></li>
+                    <li><a href="https://wa.me/986984851">Deseo cotizar una torta</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="carrusel-contenedor">
+            <button class="boton anterior" onclick="cambiarImagen(-1)">❮</button>
+            <div class="carrusel" id="carrusel">
+                <img src="imagen/carrusel/foto1.jpg" alt="Imagen 1">
+                <img src="imagen/carrusel/foto2.jpg" alt="Imagen 2">
+                <img src="imagen/carrusel/foto3.jpg" alt="Imagen 3">
+                <img src="imagen/carrusel/foto4.jpg" alt="Imagen 4">
+                <img src="imagen/carrusel/foto6.jpg" alt="Imagen 6">
+                <img src="imagen/carrusel/foto7.jpg" alt="Imagen 7">
+                <img src="imagen/carrusel/foto8.jpg" alt="Imagen 8">
+                <img src="imagen/carrusel/foto9.jpg" alt="Imagen 9">
+                <img src="imagen/carrusel/suspiros.jpg" alt="Imagen 10">
+                
+            </div>
+            <button class="boton siguiente" onclick="cambiarImagen(1)">❯</button>
+        </div>
+    
+        
+
+       <script src="script.js"></script>
+
+
+        <!-- Enlace a Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+        <section id="producto">
+            <h1>Tortas</h1>
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <figure>
+                       <img src="imagen/tortas/foto.jpg" alt="Tarta de fresa" width="250" height="200">
+                       <h3>Tortas personalizadas</h3>
+                         <p>Tortas personalizada</p>
+                    </figure>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto1.jpg" alt="Tarta de fresa" width="250" height="200">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto2.jpg" alt="Tarta de fresa" width="250" height="200">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas de personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto3.jpg" alt="Tarta de fresa" width="250" height="200">
+                    <h3>Torta de chocolate</h3>
+                    <p>Tortas de chocolate</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="productos">
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen/tortas/foto4.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Torta Candy</h3>
+                    <p>Tortas de golosinas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto5.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto6.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto7.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas personalizada</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="productos">
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen/tortas/foto8.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas de matrimonio</h3>
+                    <p>Tortas de matrimonio </p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto9.jpeg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas de graduacion </h3>
+                    <p>Tortas de promocion</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/torta promocion.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto11.jpg" alt="Tarta de fresa" width="400" height="250">
+                    <h3>Tortas de Matrimonio</h3>
+                    <p>Tortas de Matrimonio</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="productos">
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen/tortas/foto12.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas </p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto13.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas </h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto14.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto15.jpg" alt="Tarta de fresa" width="400" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="productos">
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen/tortas/tortacars.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas </p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/tortadinosaurio.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas </h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/tortacorazon.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto16.jpg" alt="Tarta de fresa" width="400" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="productos">
+
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen/tortas/foto17.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas </p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/tortagolosina.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas </h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/tortacorazon.jpg" alt="Tarta de fresa" width="230" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+                <div class="producto">
+                    <img src="imagen/tortas/foto11.jpg" alt="Tarta de fresa" width="400" height="250">
+                    <h3>Tortas personalizadas</h3>
+                    <p>Tortas</p>
+                </div>
+
+            </div>
+
+        </section>
+        <div style="text-align: center;">
+
+            <a href="index1.html">
+                <h2><p>Ir a la siguiente página</p></h2>
+            </a>
+
+
+        </div>
+
+
+
+        <!-- Sección Carta por Mayor -->
+        <section id="mayorista">
+            <h1>Carta de Productos por Mayor</h1>
+            <p><strong>
+                    Para ver nuestra carta de productos al por mayor, haz clic en el siguiente enlace para
+                    descargar
+                    el
+                    archivo en formato PDF:</strong>
+            </p>
+            <a href="doc/CARTA POR MAYOR.pdf" target="_blank">
+                <h1>Ver PDF</h1>
+            </a>
+        </section>
+
+        <section id="contacto">
+            <div class="texto"> Contáctanos</div>
+            <h1 class="neon">Email: lospostresydulcesdepaty@gmail.com</h1>
+            <h1 class="neon">Teléfono: 986984851</h1>
+            <h1 class="neon">Teléfono: 967521304</h1>
+           
+           
+            <p>
+                <a href="https://wa.me/986984851" target="_blank" class="whatsapp-link">
+                    <img src="imagen/logo/logo.png" alt="WhatsApp" class="whatsapp-icon">
+                    Escríbenos por WhatsApp
+                </a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy;Dulces y Postres de Paty. Todos los derechos reservados.</p>
+        </footer>
+    </section>
+</body>
+ 
+
+</html>

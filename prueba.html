@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Estático</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carrusel-contenedor {
+            width: 600px; /* Ancho del carrusel */
+            height: 400px; /* Alto del carrusel */
+            overflow: hidden;
+            position: relative;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carrusel {
+            display: flex;
+            width: 1800px; /* 3 imágenes (600px cada una) */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carrusel img {
+            width: 600px; /* Tamaño fijo */
+            height: 400px;
+            object-fit: cover; /* Ajuste sin deformar */
+        }
+
+        .boton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .anterior {
+            left: 10px;
+        }
+
+        .siguiente {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carrusel-contenedor">
+        <button class="boton anterior" onclick="cambiarImagen(-1)">❮</button>
+        <div class="carrusel" id="carrusel">
+            <img src="imagen/carrusel/foto1.jpg" alt="Imagen 1">
+            <img src="imagen/carrusel/foto2.jpg" alt="Imagen 2">
+            <img src="imagen/carrusel/foto3.jpg" alt="Imagen 3">
+            <img src="imagen/carrusel/foto4.jpg" alt="Imagen 4">
+            <img src="imagen/carrusel/foto5.jpg" alt="Imagen 5">
+            <img src="imagen/carrusel/foto6.jpg" alt="Imagen 6">
+            <img src="imagen/carrusel/foto7.jpg" alt="Imagen 7">
+            <img src="imagen/carrusel/foto8.jpg" alt="Imagen 8">
+            <img src="imagen/carrusel/foto9.jpg" alt="Imagen 9">
+            <img src="imagen/carrusel/foto10.jpg" alt="Imagen 10">
+        </div>
+        <button class="boton siguiente" onclick="cambiarImagen(1)">❯</button>
+    </div>
+
+    <script>
+        let indice = 0;
+        const total = 3;
+        const carrusel = document.getElementById("carrusel");
+
+        function cambiarImagen(direccion) {
+            indice = (indice + direccion + total) % total;
+            carrusel.style.transform = `translateX(${-indice * 600}px)`;
+        }
+    </script>
+
+</body>
+</html>
+
+

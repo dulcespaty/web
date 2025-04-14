@@ -1,0 +1,395 @@
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.productos-grid{
+    position: relative;
+}
+
+
+
+
+
+/*main*/
+.productos-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+}
+
+.producto{
+    border-radius: 10px;
+    
+} 
+
+
+.producto:hover{
+    box-shadow: 0 10px 20px  rgba(0,0,0,0.20);
+
+}
+ 
+.producto img{
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+
+} 
+
+.producto figure{
+    overflow: hidden;
+}
+
+.producto:hover img{
+    transform:scale(1.2);
+}
+
+
+/*otro estilo */
+@media (max-width: 768px) {
+    img {
+      height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+  
+    .contenedor {
+      height: 300px; /* Ajusta la altura en móviles */
+    }
+  }
+  
+
+
+
+
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .contenedor {
+        width: 100%; /* Ajustar el ancho al 100% */
+        padding: 10px;
+    }
+    
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    background: url(imagen/fondo.png);
+}
+
+header {
+    background-color: #e3b8a1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*.hero {
+    background-image: url('imagen/foto15.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 250px 0;
+}*/
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #e3b8a1;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table th, table td {
+    border: 1px solid #e3b8a1;
+    padding: 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f7c6b6;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.hero{
+
+    color: #0ae29af5;
+    font-size: 36px;
+   
+}
+
+.subir-arriba {
+    position: relative;
+    top: -255px; /* Mueve el texto 30px hacia arriba */
+}
+.subir-arriba1 {
+    position: relative;
+    top: -270px; /* Mueve el texto 30px hacia arriba */
+}
+.imagen-reducida {
+    width: 900px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.imagen-reducida {
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.subir-arriba1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 30px;
+    color: #c5f80c;
+    font-style: italic;
+}
+.subir-arriba {
+    font-family: 'Verdana', sans-serif;
+    font-size: 30px;
+    color: #c5f80c;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+
+
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+  }
+  
+  .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /*estilos de letras*/
+
+  @keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.texto {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(231, 9, 9);
+    animation: parpadeo 1s infinite;
+}
+
+/*estilo neon*/
+@keyframes neon {
+    0% { text-shadow: 0 0 5px hsl(0, 81%, 46%), 0 0 10px #ff0000, 0 0 20px #ff0000; }
+    50% { text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733; }
+    100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+}
+
+.neon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5f10f;
+    text-align: center;
+    animation: neon 1.5s infinite alternate;
+}
+
+/*carrusel de imagenes estaticos*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel-contenedor {
+    width: 600px; /* Ancho del carrusel */
+    height: 400px; /* Alto del carrusel */
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel {
+    display: flex;
+    width: 1800px; /* 3 imágenes (600px cada una) */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 600px; /* Tamaño fijo */
+    height: 400px;
+    object-fit: cover; /* Ajuste sin deformar */
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
